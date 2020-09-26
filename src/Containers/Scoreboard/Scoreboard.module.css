@@ -1,0 +1,100 @@
+.Scoreboard {
+    position: fixed;
+    border: 1px solid grey;
+    text-align: center;
+    min-width: 800px;
+    width: 90%;
+    left: 5%;
+    min-height: 100px;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 10px rgb(32, 32, 32);
+    background-color: rgb(221, 215, 215);
+}
+
+.SignOne {
+    position: absolute;
+    line-height: 100%;
+    font-size: 40px; 
+    display: inline-block; 
+    font-weight: bold;
+    left: 10%;
+    color: red;
+    
+}
+
+.SignDivider {
+    position: absolute;
+    display: inline-block;
+    font-size: 40px;
+    left: 15%;
+    right: 20%;
+}
+
+.SignTwo {
+    position: absolute;
+    line-height: 100%;
+    font-size: 40px;
+    right: 10%;
+    display: inline-block;
+    font-weight: bold;
+    color: blue;
+}
+
+.WhoseTurn {
+    position: absolute;
+    left: 20%;
+    right: 25%;
+}
+
+
+@media (max-width: 1100px) {
+    .Scoreboard {
+        position: fixed;
+        border: 1px solid grey;
+        text-align: center;
+        min-width: 100px;
+        width: 450px;
+        left: 2%;
+        min-height: 100px;
+        height: 20%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 10px rgb(32, 32, 32);
+        background-color: rgb(221, 215, 215);
+    }
+    
+    .SignOne {
+        position: absolute;
+        line-height: 100%;
+        font-size: 40px; 
+        display: inline-block; 
+        font-weight: bold;
+        left: 2%;
+        color: red;
+        
+    }
+    
+    .SignDivider {
+        position: absolute;
+        display: inline-block;
+        font-size: 35px;
+        left: 3%;
+        right: 3%;
+    }
+    
+    .SignTwo {
+        position: absolute;
+        line-height: 100%;
+        font-size: 40px;
+        right: 2%;
+        display: inline-block;
+        font-weight: bold;
+        color: blue;
+    }
+    
+    .WhoseTurn {
+        position: absolute;
+        left: 20%;
+        right: 25%;
+    }
+}
