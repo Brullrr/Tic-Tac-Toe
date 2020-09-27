@@ -8,3 +8,13 @@
     border-radius: 8px;
     border: 1px solid gray;
 }
+
+@media (max-width: 1100px) {
+
+    .Tile {
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+    }
+    
+}

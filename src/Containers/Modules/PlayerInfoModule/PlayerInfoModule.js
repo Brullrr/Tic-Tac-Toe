@@ -20,7 +20,7 @@ const PlayerInfoModule = (props) => {
                     <input  id='playerOne' type='text' placeholder='Player One' maxLength='15'
                         onInput={ event => setplayerOneTitle(event.target.value)} value={playerOneTitle}/>    
                 </div>
-                <label>Choose a color:</label>
+                <label>Choose a color:  </label>
                     <select className={classes.Select} onChange={ event => setplayerOneColor(event.target.value)} value={playerOneColor}>
                         <option className={classes.Red} value="red">Red</option>
                         <option className={classes.Orange} value="orange">Orange</option>
@@ -34,7 +34,7 @@ const PlayerInfoModule = (props) => {
                     <input  id='playerTwo' type='text' placeholder='Player Two' maxLength='15'
                         onInput={ event => setPlayerTwoTitle(event.target.value)} value={playerTwoTitle}/>
                 </div>
-                <label>Choose a color:</label>
+                <label>Choose a color:  </label>
                     <select className={classes.Select} onChange={ event => {setplayerTwoColor(event.target.value)}} value={playerTwoColor}>
                         <option className={classes.Red} value="red">Red</option>
                         <option className={classes.Orange} value="orange">Orange</option>
