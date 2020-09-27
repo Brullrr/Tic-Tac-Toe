@@ -94,7 +94,7 @@ class TicTacToe extends Component {
               
             
             if(this.state.gameFinish === 9) {
-                { this.setState( () => { return {winner: "DRAW", winnerScreen: true, gameFinish: 0}}) }
+                 this.setState( () => { return {winner: "DRAW", winnerScreen: true, gameFinish: 0}}) 
             }
     }
 
@@ -119,6 +119,8 @@ class TicTacToe extends Component {
                 case 'purple': 
                     playerTwoColor = 'red'
                 break;
+                default:
+                    playerTwoColor = 'black'
             }
         }
 

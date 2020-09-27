@@ -8,7 +8,7 @@ const Gameboard = (props) => {
        <Fragment>
            
            <div className={classes.GameboardOuter}>
-           <img className={classes.ImageOne} src={require('../../Pictures/capital_x.png')}></img>
+           <img className={classes.ImageOne} src={require('../../Pictures/capital_x.png')} alt='imageOne'></img>
                 <div className={classes.Gameboard}>
                         <Tile clicked={() => { props.clicked(0) }} claim={props.claimTile[0]} color={props.tileOne}/>
                         <Tile clicked={() => { props.clicked(1) }} claim={props.claimTile[1]} color={props.tileTwo}/>
@@ -20,7 +20,7 @@ const Gameboard = (props) => {
                         <Tile clicked={() => { props.clicked(7) }} claim={props.claimTile[7]} color={props.tileEight}/>
                         <Tile clicked={() => { props.clicked(8) }} claim={props.claimTile[8]} color={props.tileNine}/>
                 </div>
-                <img className={classes.ImageTwo} src={require('../../Pictures/capital_o.png')}></img>    
+                <img className={classes.ImageTwo} src={require('../../Pictures/capital_o.png')} alt="imageTwo"></img>    
            </div>
            
            
