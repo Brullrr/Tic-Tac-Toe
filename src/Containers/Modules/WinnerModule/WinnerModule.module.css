@@ -17,16 +17,17 @@
 }
 
 .Title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 1000;
+    word-wrap: break-word;
 }
 
 .Button {
     width: 70%;
     height: 80px;
     background-color: rgb(204, 179, 152);
-    color: #070605;
-    border: 2px solid #0c0a0a;
+    color: Black;
+    border: 2px solid #BAB2B5;
     font-size: 20px;
     border-radius: 4px;
     margin-top: 5%;
