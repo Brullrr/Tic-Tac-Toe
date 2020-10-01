@@ -13,6 +13,8 @@
     background-color: #EDC7B7;
     box-sizing: border-box;
     transition: all 0.5s ease-out;
+    height: 50%;
+    min-height: 300px;
 }
 
 .Player {
@@ -20,23 +22,12 @@
     display: grid;
 }
 
-.Player label {
-    font-size: 30px;
-    font-weight: bold;
-    color: #070605;
-    width: 50%;
-    margin-left: 25%;
-    padding-top: 1.5em;
-    margin-right: 40px;
-}
-
-
 .Player input {
-    width: 50%;
+    width: 60%;
     margin: 10px 0px 0px 0px;
-    margin-left: 25%;
+    margin-left: 20%;
     text-align: center;
-    border: 1px solid#BAB2B5;
+    border: 1px solid#6e6a6c;
     height: 20px;
     background-color: #EEE2DC;
     color: #070605;
@@ -44,23 +35,36 @@
 
 
 .Button {
-    width: 70%;
+    position: absolute;
+    width: 60%;
     height: 80px;
     background-color: #EEE2DC;
-    color: Black;
-    border: 2px solid #BAB2B5;
+    color: #6e6a6c;
+    border: 2px solid #6e6a6c;
     font-size: 60px;
     border-radius: 4px;
-    margin-top: 0px;
-    margin-left: 0px;
+    bottom: 10%;
+    left: 20%;
+}
+.Button:hover {
+    background-color: #6e6a6c;
+    color: #EEE2DC;
+    border: 2px solid #EEE2DC;
+    transform: scale(1.3);   
 }
 
 
 .Select {
-    margin-top: 30px;
-    margin-right: 50px;
-    padding-right: 10%;
+    width: 30%;
+    left: 45%;
+    margin-top: 25px;
+    text-align: center;
 }
+
+.Select option {
+    text-align: center;
+}
+
 .Red {
     color: red;
     background-color: Red;
@@ -102,20 +106,11 @@
         box-shadow: 1px 1px 1px black;
         padding: 16px;
         left: 15%;
-        top: 2%;
+        top: 15%;
         box-sizing: border-box;
         transition: all 0.5s ease-out;
     }
     
-    .Player label {
-        font-size: 30px;
-        font-weight: bold;
-        color: #070605;
-        width: 100%;
-        margin-left: 0%;
-        padding-top: 1em;
-        margin-right: 40px;
-    }
     
     
     .Player input {
@@ -123,7 +118,7 @@
         margin: 10px 0px 0px 0px;
         margin-left: 25%;
         text-align: center;
-        border: 1px solid#BAB2B5;
+        border: 1px solid#6e6a6c;
         height: 20px;
     }
     
