@@ -5,11 +5,11 @@
     font-size: 40px;
     text-align: center;
     line-height: 150px;
-    border-radius: 8px;
-    border: 1px solid gray;
+    border: none;
+    background-color: #EEE2DC;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 
     .Tile {
         height: 100px;

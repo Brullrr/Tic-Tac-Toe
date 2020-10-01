@@ -3,6 +3,7 @@ import PlayerInfoModule from '../Modules/PlayerInfoModule/PlayerInfoModule'
 import Scoreboard from '../Scoreboard/Scoreboard'
 import Gameboard from '../Gameboard/Gameboard'
 import WinnerModule from '../Modules/WinnerModule/WinnerModule'
+import classes from './TicTacToe.module.css';
 
 
 
@@ -17,7 +18,7 @@ class TicTacToe extends Component {
         playerOneColor: 'red',
         playerTwoColor: 'blue',
         ticTacToeBoard: ['','','','','','','','',''],
-        editing: true,
+        editing: false,
         turn: true,
         winner: 'hey',
         winnerScreen: false,
@@ -26,30 +27,31 @@ class TicTacToe extends Component {
 
     
 
-    changePlayerOneHandler = (input) => {
+    changePlayerOneHandler = (input, playerOneColor) => {
         if(input.length < 1){
-            input = 'Player One';
+            input = this.state.playerOneName;
         }
             this.setState( () => {
                 return {
-                    playerOneName: input
+                    playerOneName: input,
+                    playerOneColor: playerOneColor
                 }
             })
         
     }
-    changePlayerTwoHandler = (input) => {
+    changePlayerTwoHandler = (input, playerTwoColor) => {
         if(input.length < 1){
-            input = 'Player Two';
+            input = this.state.playerTwoName;
         }
             this.setState( () => {
                 return {
-                    playerTwoName: input
+                    playerTwoName: input,
+                playerTwoColor: playerTwoColor
                 }
             })
     }
 
     updateWinnerHandler = () => {
-        console.log(this.state.playerTwoColor)
         this.setState( (prevState) => {
             return {
                 gameFinish: prevState.gameFinish + 1
@@ -124,12 +126,10 @@ class TicTacToe extends Component {
             }
         }
 
-        this.changePlayerOneHandler(playerOneInput)
-        this.changePlayerTwoHandler(playerTwoInput)
+        this.changePlayerOneHandler(playerOneInput, playerOneColor)
+        this.changePlayerTwoHandler(playerTwoInput, playerTwoColor)
         this.setState( () => {
             return {
-                playerOneColor: playerOneColor,
-                playerTwoColor: playerTwoColor,
                 editing: false
             }
         } )
@@ -170,11 +170,20 @@ class TicTacToe extends Component {
         })
     }
 
+    openEditingHandler  = () => {
+        this.setState( () => {
+            return {
+                editing: true
+            }
+        })
+    }
+
 
     render () {
         let playerInfoModule = <PlayerInfoModule 
-        playButton = {this.playButtonHandler}
-        changePlayerOne={this.changePlayerOneHandler}/>; 
+        playButton = {this.playButtonHandler} 
+        playerOneColorPreserve = {this.state.playerOneColor}
+        playerTwoColorPreserve = {this.state.playerTwoColor}/>;
         if(!this.state.editing){
             playerInfoModule = null
         }
@@ -207,63 +216,63 @@ class TicTacToe extends Component {
         } else if (this.state.ticTacToeBoard[0] === 'O') {
             tileOne = this.state.playerTwoColor
         } else {
-            tileOne = 'white'
+            tileOne = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[1] === 'X') {
             tileTwo = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[1] === 'O') {
             tileTwo = this.state.playerTwoColor
         } else {
-            tileTwo = 'white'
+            tileTwo = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[2] === 'X') {
             tileThree = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[2] === 'O') {
             tileThree = this.state.playerTwoColor
         } else {
-            tileThree = 'white'
+            tileThree = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[3] === 'X') {
             tileFour = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[3] === 'O') {
             tileFour = this.state.playerTwoColor
         } else {
-            tileFour = 'white'
+            tileFour = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[4] === 'X') {
             tileFive = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[4] === 'O') {
             tileFive = this.state.playerTwoColor
         } else {
-            tileFive = 'white'
+            tileFive = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[5] === 'X') {
             tileSix = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[5] === 'O') {
             tileSix = this.state.playerTwoColor
         } else {
-            tileSix = 'white'
+            tileSix = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[6] === 'X') {
             tileSeven = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[6] === 'O') {
             tileSeven = this.state.playerTwoColor
         } else {
-            tileSeven = 'white'
+            tileSeven = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[7] === 'X') {
             tileEight = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[7] === 'O') {
             tileEight = this.state.playerTwoColor
         } else {
-            tileEight = 'white'
+            tileEight = '#EEE2DC'
         }
         if(this.state.ticTacToeBoard[8] === 'X') {
             tileNine = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[8] === 'O') {
             tileNine = this.state.playerTwoColor
         } else {
-            tileNine = 'white'
+            tileNine = '#EEE2DC'
         }
 
 
@@ -294,7 +303,9 @@ class TicTacToe extends Component {
                 tileSeven={tileSeven}
                 tileEight={tileEight}
                 tileNine={tileNine}
+                buttonClicked={this.openEditingHandler}
                 />   
+                
                 
             </Fragment>
             

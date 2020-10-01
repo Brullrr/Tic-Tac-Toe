@@ -15,18 +15,22 @@ const Scoreboard = (props) => {
             <p className={classes.SignOne}
             style={{
                 color: props.playerOneColor
-            }}>
-                {props.playerOneScore} </p>
-            <p className={classes.SignDivider}>{props.playerOneName} - {props.playerTwoName}</p>
+                }}>
+                {props.playerOneName} <br/>{props.playerOneScore}</p>
+
+                <p className={classes.WhoseTurn}  
+                style={{
+                    color: color
+                }}>
+                {props.whoseTurn}'s turn</p>
+
+
             <p className={classes.SignTwo}
             style={{
                 color: props.playerTwoColor
             }}>
-                {props.playerTwoScore}</p>
-            <p className={classes.WhoseTurn}  
-            style={{
-                color: color
-            }}>{props.whoseTurn}'s turn</p>
+                {props.playerTwoName} <br /> {props.playerTwoScore}</p>
+            
         </div>
     )
 }

@@ -26,19 +26,43 @@
     right: 20%;
     display: grid;
     grid-template-columns: 150px 150px 150px;
-    z-index: 200;
+    padding: 10px;
 }
 
-@media (max-width: 1100px) {
+
+.Button {
+    position: absolute;
+    bottom: 0%;
+    left: -12%;
+    height: 15%;
+    width: 15%;
+    background-color: #EEE2DC;
+    color:  #e6733a;
+    font-size: 25px;
+    border: 2px solid #e6733a;
+    border-top-right-radius: 50px;
+}
+
+.Button:hover {
+    font-size: 30px;
+    color: #EEE2DC;
+    background-color:  #e6733a;
+    border: 2px solid #EEE2DC;
+    left: 0%;
+}
+
+
+@media (max-width: 1000px) {
 
     .GameboardOuter {
         position: relative;
-        width: 90%;
+        width: 100%;
         left: 0%;
         min-width: 460px;
         height: 100%;
-        padding: 15% 0px 40% 0px;
-        top: 150px;
+        top: 50%;
+        padding: 12% 0px 35% 0px;
+        margin: 0px 0px 0px 0px;
     }
     
     .ImageOne {
@@ -63,10 +87,45 @@
         position: absolute;
         display: grid;
         grid-template-columns: 100px 100px 100px;
-        z-index: 200;
-        left: 5%;
-        top: 15%;
     }
     
+    .Button {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        height: 15%;
+        width: 45%;
+        background-color: #EEE2DC;
+        color:  #e6733a;
+        font-size: 25px;
+        border: 2px solid #e6733a;
+        border-radius: 12px;
+        margin: 0px 0px 15% 25%;
+    }
+    .Button:hover {
+        background-color: #e6733a;
+        color:   #EEE2DC;
+        border: 2px solid  #EEE2DC;
+    }
+}
 
+@media (max-width: 450px) {
+    .Button {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        height: 15%;
+        width: 45%;
+        background-color: #EEE2DC;
+        color:  #e6733a;
+        font-size: 25px;
+        border: 2px solid #e6733a;
+        border-radius: 12px;
+        margin: 0px 0px 10% 50%;
+    }
+    .Button:hover {
+        background-color: #e6733a;
+        color:   #EEE2DC;
+        border: 2px solid  #EEE2DC;
+    }
 }
