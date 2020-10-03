@@ -1,6 +1,6 @@
 .Scoreboard {
     position: fixed;
-    border: 1px solid#BAB2B5;
+    border: 1px solid#B1A296;
     text-align: center;
     width: 100%;
     left: 0%;
@@ -9,7 +9,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1px 1px 10px 10px rgb(32, 32, 32);
-    background-color: #BAB2B5;
+    background-color: #B1A296;
     top: 0%;
 }
 
@@ -47,14 +47,8 @@
 
 @media (max-width: 1000px) {
     .Scoreboard {
-        position: fixed;
-        border: 1px solid#BAB2B5;
-        text-align: center;
         height: 10%;
         min-width: 600px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 10px rgb(32, 32, 32);
-        background-color: rgb(221, 215, 215);
     }
     
     .SignOne {
@@ -90,13 +84,7 @@
 
 @media (max-width: 450px) {
     .Scoreboard {
-        position: fixed;
-        border: 1px solid#BAB2B5;
-        text-align: center;
-        height: 10%;
         min-width: 100px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 10px rgb(32, 32, 32);
         background-color: rgb(221, 215, 215);
     }
     

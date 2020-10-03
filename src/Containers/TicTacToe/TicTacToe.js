@@ -216,63 +216,63 @@ class TicTacToe extends Component {
         } else if (this.state.ticTacToeBoard[0] === 'O') {
             tileOne = this.state.playerTwoColor
         } else {
-            tileOne = '#EEE2DC'
+            tileOne = '#7395AE'
         }
         if(this.state.ticTacToeBoard[1] === 'X') {
             tileTwo = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[1] === 'O') {
             tileTwo = this.state.playerTwoColor
         } else {
-            tileTwo = '#EEE2DC'
+            tileTwo = '#7395AE'
         }
         if(this.state.ticTacToeBoard[2] === 'X') {
             tileThree = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[2] === 'O') {
             tileThree = this.state.playerTwoColor
         } else {
-            tileThree = '#EEE2DC'
+            tileThree = '#7395AE'
         }
         if(this.state.ticTacToeBoard[3] === 'X') {
             tileFour = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[3] === 'O') {
             tileFour = this.state.playerTwoColor
         } else {
-            tileFour = '#EEE2DC'
+            tileFour = '#7395AE'
         }
         if(this.state.ticTacToeBoard[4] === 'X') {
             tileFive = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[4] === 'O') {
             tileFive = this.state.playerTwoColor
         } else {
-            tileFive = '#EEE2DC'
+            tileFive = '#7395AE'
         }
         if(this.state.ticTacToeBoard[5] === 'X') {
             tileSix = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[5] === 'O') {
             tileSix = this.state.playerTwoColor
         } else {
-            tileSix = '#EEE2DC'
+            tileSix = '#7395AE'
         }
         if(this.state.ticTacToeBoard[6] === 'X') {
             tileSeven = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[6] === 'O') {
             tileSeven = this.state.playerTwoColor
         } else {
-            tileSeven = '#EEE2DC'
+            tileSeven = '#7395AE'
         }
         if(this.state.ticTacToeBoard[7] === 'X') {
             tileEight = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[7] === 'O') {
             tileEight = this.state.playerTwoColor
         } else {
-            tileEight = '#EEE2DC'
+            tileEight = '#7395AE'
         }
         if(this.state.ticTacToeBoard[8] === 'X') {
             tileNine = this.state.playerOneColor
         } else if (this.state.ticTacToeBoard[8] === 'O') {
             tileNine = this.state.playerTwoColor
         } else {
-            tileNine = '#EEE2DC'
+            tileNine = '#7395AE'
         }
 
 

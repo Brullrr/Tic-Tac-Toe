@@ -1,9 +1,5 @@
 body {
-    background-color: #EEE2DC;
+    background-color: #7395AE;
 }
 
-@media (max-width: 1000px) {
-    body {
-        background-color: #EEE2DC;
-    }
-}
+

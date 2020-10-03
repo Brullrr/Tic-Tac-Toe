@@ -27,8 +27,18 @@
     height: 80px;
     background-color: rgb(204, 179, 152);
     color: Black;
-    border: 2px solid #BAB2B5;
+    border: 2px solid black;
     font-size: 20px;
     border-radius: 4px;
     margin-top: 5%;
+}
+.Button:hover {
+    width: 70%;
+    height: 80px;
+    background-color: rgb(53, 43, 43);
+    color: rgb(204, 179, 152);
+    border: 2px solid rgb(204, 179, 152);
+    font-size: 30px;
+    font-weight: bold;
+    transform: scale(1.1);
 }
