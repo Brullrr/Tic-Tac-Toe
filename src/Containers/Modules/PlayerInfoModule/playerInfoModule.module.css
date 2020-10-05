@@ -137,3 +137,28 @@
     }
     
 }
+
+@media (max-height: 450px) {
+    
+    .Module {
+        text-align: center;
+        position: fixed;
+        z-index: 500;
+        width: 70%;
+        border: 1px solid #7395AE;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px black;
+        padding: 16px;
+        left: 15%;
+        top: 10%;
+        background-color: #7395AE;
+        box-sizing: border-box;
+        transition: all 0.5s ease-out;
+        height: 50%;
+        min-height: 300px;
+        min-width: 300px;
+        margin: 0px 0px 0px 0px;
+    }
+    
+
+}

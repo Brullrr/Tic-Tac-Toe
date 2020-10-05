@@ -93,7 +93,7 @@ const Gameboard = (props) => {
            </div>
            <button 
                     className={classes.Button}
-                    onClick={props.buttonClicked}> Player Info </button>
+                    onClick={props.buttonClicked}> Player<br/>&nbsp;&nbsp;Info &nbsp;</button>
            
            
        </Fragment>

@@ -32,14 +32,15 @@
 .Button {
     position: absolute;
     bottom: 0%;
-    left: -12%;
+    left: -9%;
     height: 15%;
     width: 15%;
     background-color: #EEE2DC;
     color:  #e6733a;
-    font-size: 5px;
+    font-size: 20px;
     border: 2px solid #e6733a;
     border-top-right-radius: 50px;
+    text-align: right;
 }
 
 .Button:hover {
@@ -48,6 +49,7 @@
     background-color:  #e6733a;
     border: 2px solid #EEE2DC;
     left: 0%;
+    text-align: center;
 }
 
 
@@ -74,13 +76,13 @@
     .Button {
         position: absolute;
         bottom: 0%;
-        left: -10%;
+        left: -6%;
         height: 15%;
         width: 15%;
         
         background-color: #EEE2DC;
         color:  #e6733a;
-        font-size: 5px;
+        font-size: 15px;
         border: 2px solid #e6733a;
         border-top-right-radius: 50px;
     }
@@ -99,6 +101,10 @@
     .GameboardOuter {
         min-width: 300px;
     }
+
+    .Gameboard {
+        top: 65%;
+    }
     
     .Button {
         position: absolute;
@@ -110,8 +116,9 @@
         border: 2px solid #e6733a;
         border-radius: 12px;
         left: 50%;
-        top: 85%;
+        top: 90%;
         margin: -15% 0px 0px -166px;
+        text-align: center;
     }
     .Button:hover {
         background-color: #e6733a;
@@ -119,4 +126,28 @@
         border: 2px solid  #EEE2DC;
         left: 50%;
     }
+}
+
+@media (max-height: 450px) {
+    
+
+    .Gameboard {
+        grid-template-columns: 75px 91px 75px;
+        margin: -200px 0px 0px -120.5px;
+        top: 80%;
+        left: 50%;
+    }
+    
+    .Button {
+        left: 0%;
+        text-align: center;
+    }
+    .Button:hover {
+        background-color: #e6733a;
+        color:   #EEE2DC;
+        border: 2px solid  #EEE2DC;
+        font-size: 15px;
+        width: 10%;
+    }
+
 }
