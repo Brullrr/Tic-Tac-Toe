@@ -32,15 +32,17 @@
 .Button {
     position: absolute;
     bottom: 0%;
-    left: -9%;
+    left: 0%;
     height: 15%;
-    width: 15%;
+    width: 5%;
+    min-width: 75px;
     background-color: #EEE2DC;
     color:  #e6733a;
     font-size: 20px;
     border: 2px solid #e6733a;
     border-top-right-radius: 50px;
     text-align: right;
+    padding: 10px 10px 0px 0px;
 }
 
 .Button:hover {
@@ -50,6 +52,8 @@
     border: 2px solid #EEE2DC;
     left: 0%;
     text-align: center;
+    width: 15%;
+    padding: 0px 10px 0px 0px;
 }
 
 
@@ -76,15 +80,16 @@
     .Button {
         position: absolute;
         bottom: 0%;
-        left: -6%;
+        left: 0%;
         height: 15%;
         width: 15%;
         
         background-color: #EEE2DC;
         color:  #e6733a;
-        font-size: 15px;
+        font-size: 20px;
         border: 2px solid #e6733a;
         border-top-right-radius: 50px;
+        padding: 0px 30px 0px 0px;
     }
     
     .Button:hover {
@@ -112,19 +117,22 @@
         width: 332px;
         background-color: #EEE2DC;
         color:  #e6733a;
-        font-size: 25px;
         border: 2px solid #e6733a;
         border-radius: 12px;
+        font-size: 30px;
         left: 50%;
-        top: 90%;
+        top: 93%;
         margin: -15% 0px 0px -166px;
         text-align: center;
+        padding: 0px 10px 0px 0px;
     }
     .Button:hover {
         background-color: #e6733a;
         color:   #EEE2DC;
         border: 2px solid  #EEE2DC;
         left: 50%;
+        padding: 0px 10px 0px 0px;
+        width: 332px;
     }
 }
 
@@ -141,6 +149,7 @@
     .Button {
         left: 0%;
         text-align: center;
+        padding: 0px 20px 0px 0px;
     }
     .Button:hover {
         background-color: #e6733a;

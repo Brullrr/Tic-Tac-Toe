@@ -46,6 +46,7 @@
     bottom: 10%;
     left: 50%;
     margin: 0px 0px 0px -30%;
+    
 }
 .Button:hover {
     background-color: #5D5C61;
@@ -107,7 +108,7 @@
         border-radius: 4px;
         box-shadow: 1px 1px 1px black;
         padding: 16px;
-        left: 15%;
+        left: 13%;
         top: 10%;
         background-color: #7395AE;
         box-sizing: border-box;
@@ -134,6 +135,7 @@
         width: 70%;
         font-size: 20px;
         margin: 0px 0px 0px -35%;
+        
     }
     
 }
